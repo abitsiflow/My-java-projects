@@ -29,7 +29,7 @@ public class OopBankAccount {
 
             switch(choice){
                 case 1 -> BA.balance += BA.deposit();
-                case 2 -> BA.balance -= BA.withdraw(BA.balance);
+                case 2 -> BA.balance = BA.balance -= BA.withdraw(BA.balance);
                 case 3 -> BA.inBalance(BA.balance);
                 case 4 -> {
                     System.out.println("Exiting...");
