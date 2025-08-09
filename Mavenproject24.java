@@ -55,18 +55,14 @@ public class Mavenproject24 {
         scan.nextLine();
         
         switch(choice){
-            case "+" -> {
-                System.out.println("Total: " + addition(fNumber,lNumber));
-            }
-            case "-" -> {
-                System.out.println("Total: " + subtraction(fNumber,lNumber));
-            }
-            case "*" -> {
-                System.out.println("Total: " + multiplication(fNumber,lNumber));
-            }
-            case "/" -> {
-                System.out.println("Total: " + division(fNumber,lNumber));
-            }
+            case "+" -> System.out.println("Total: " + addition(fNumber,lNumber));
+            
+            case "-" -> System.out.println("Total: " + subtraction(fNumber,lNumber));
+            
+            case "*" -> System.out.println("Total: " + multiplication(fNumber,lNumber));
+            
+            case "/" -> System.out.println("Total: " + division(fNumber,lNumber));
+            
             default -> System.out.println("Invalid Choice");
         }
             
