@@ -8,23 +8,22 @@ package mimo.abstraction;
  *
  * @author ADMIN
  */
-public class Car extends Vehicle {
+public class Motorcycle extends Vehicle{
     
-    int doors;
-    Car(String brand, String model, int year){  
+    boolean sidecar;
+    Motorcycle(String brand, String model, int year){
         super(brand, model, year);
-        this.doors = 4;
+        this.sidecar = false;
     }
     
     @Override
     void sound(){
-        System.out.println("Sound: Vroom vroom!");
+        System.out.println("Sound: Braap!");
     }
     
     @Override
     public String toString() {
-        return super.toString() + "[" + this.brand + " " + this.model + " | " + this.year + "Car(doors=" + this.doors + ")";
+        return super.toString() + "[" + this.brand + " " + "|" + " " + this.year + "]" + " " + "Motorcycle(sidecar=" + this.sidecar + ")";
     }
-
-   
+    
 }
