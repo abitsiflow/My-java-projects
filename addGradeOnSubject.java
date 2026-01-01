@@ -15,6 +15,8 @@ public class addGradeOnSubject {
     static double [] list_grade = new double[2];
     String[] list_subject = new String[2];
    
+    String subject;
+    static double grade;
     /*
     String subject;
     static double grade;
@@ -33,10 +35,10 @@ public class addGradeOnSubject {
        
        for(int i = 0; i < list_subject.length; i++){
             System.out.print("Enter Subject: ");
-            list_subject[i] = scan.nextLine().trim();
+            subject = scan.nextLine().trim();
        
             System.out.print("Enter Grade: ");
-            list_grade[i] = scan.nextDouble();
+            grade = scan.nextDouble();
             scan.nextLine(); // need this to prevent skipping
             
             System.out.println();
@@ -54,11 +56,10 @@ public class addGradeOnSubject {
     
     void showGrades(){
        
-        for(double grades : list_grade){
-       for(String subjects : list_subject){
-           System.out.println(grades + " == " + subjects); //now i make a to show records
-       }
-     }
+        for(int i = 0; i < list_subject.length; i++){
+           System.out.println(list_subject[i] + " == " + list_grade[i]); //now i make a to show records 
+        }
+        
     }
     
     void isPassed(){
